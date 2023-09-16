@@ -9,22 +9,48 @@ body{
     text-align: center;
 }
 /* button-style-2 */
-.button_style_2 a{
-    border-radius: 8px;
-    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -ms-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-    padding: 12px 55px;
+.button_style_3 a{
+    padding: 12px 50px;
     font-size: 20px;
-    font-weight: 500;
-    background-color: #140342;
-    border: 2px solid #140342;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #0d6efd;
+    background-color: #0d6efd;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     color: #fff;
     text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -moz-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -ms-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.button_style_2 a:hover{
+.button_style_3 a:after{
+    content: '';
+    width: 0;
+    z-index: 0;
+    left: 0;
+    transition: 0.5s linear;
+    height: 100%;
+    top: 0;
+    position: absolute;
     background-color: #fff;
-    color: #140342;
+}
+.button_style_3 a span{
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+.button_style_3 a:hover{
+    color: #000;
+}
+.button_style_3 a:hover:after{
+    width: 100%;
 }
